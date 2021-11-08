@@ -27,8 +27,8 @@ code {
     pointer-events: none;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+.color{
+    background-color: rgba(218, 91, 45, 0.836);
+    color: white;
 }

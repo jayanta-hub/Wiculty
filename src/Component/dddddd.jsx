@@ -1,31 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Searchdata } from "../../Assets/data";
-const Navbar = () => {
-  let [searchfilter, setSearchfilter] = useState("");
-  let [show, setShow] = useState(false);
-  let [datatodisplya, setDatatodisplya] = useState("");
+import React, { Component } from 'react'
 
-  const filterhandler = (e) => {
-    setSearchfilter(e.target.value);
-  };
-  const filterhandler1 = () => {
-    setShow(!show);
-    console.log(show);
-  };
-  const filterhandler2 = () => {
-    setShow(false);
-  };
-  // const valuehandler=(e)=>{
-    
-  //   setDatatodisplya()
-  // }
+ class Navbar extends Component {
+     constructor(){
+         super();
+         this.state={
+            searchfilter:"",
+            show:false,
+            datatodisplya:""
+         }
 
-  return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark navbar sticky col-md-12">
-        <div className="collapse navbar-collapse col-md-12" id="navbarTogglerDemo01">
+     }
+     const filterhandler = (e) => {
+        setSearchfilter(e.target.value);
+      };
+      const filterhandler1 = () => {
+        setShow(!show);
+        console.log(show);
+      };
+      const filterhandler2 = () => {
+        setShow(false);
+      };
+      const valuehandler=(e)=>{
+        console.log(e)
+        console.log(e.target)
+        console.log(e.target.value)
+        setDatatodisplya()
+      }
+    render() {
+        return (
+            <>
+      <nav className="navbar navbar-expand-md navbar-dark navbar sticky">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <img
             className="navlogo"
             src="https://d2alvkbeky9xdq.cloudfront.net/img/New-wiculty-logo.png"
@@ -48,9 +53,9 @@ const Navbar = () => {
               // onMouseLeave={filterhandler2}
             />
             {show ? (
-              <div className="card" style={{zIndex:"2"}}>
+              <div className="card">
                 {Searchdata.filter((value) => {
-                  if (searchfilter === "") {
+                  if (searchfilter == "") {
                     return value;
                   } else if (
                     value
@@ -61,9 +66,8 @@ const Navbar = () => {
                   }
                 }).map((value) => {
                   return (
-                    <li value={value}
+                    <li value={value}  onClick={valuehandler}
                       className="dropdown-item"
-                      // href="https://getbootstrap.com/docs/4.6/components/dropdowns/"
                     >
                       {value}
                     </li>
@@ -117,6 +121,8 @@ const Navbar = () => {
         </div>
       </nav>
     </>
-  );
-};
-export default Navbar;
+        )
+    }
+}
+
+export default Navbar

@@ -36,4 +36,78 @@
     transform: rotate(360deg);
   }
 }
+/* body{
+  margin: 0;
+  padding: 0;
+  background: url(./image/download.jfif);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+} */
 
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.headertext {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 10px;
+  /* linear-gradient:rgba(0, 0, 0, 0.5 rgba 0, 0, 0, 0.5); */
+  color: #000;
+}
+.text{
+  text-align: center;
+  justify-content: center;
+  margin-left: 50%;
+}
+
+/* .box{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.box1{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.bodybox{
+  display: flex;
+  justify-content: center;
+
+} */
+
+.card1{
+  border-radius: 5px;
+  padding: 8px;
+  border:1px solid black;
+  box-shadow: gray;
+}
+.login{
+  width: 550px;
+  height: 60px;
+  margin-top: 100px;
+ 
+  
+
+}
+.loginpage{
+  display: flex;
+  justify-content: center;
+  background-image: url("./image/images\ \(1\).jfif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height:729px;
+}
