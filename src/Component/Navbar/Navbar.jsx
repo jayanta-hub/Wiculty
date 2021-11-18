@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Searchdata } from "../../Assets/data";
 import { AiOutlineSearch } from "react-icons/ai";
 import { ProductData } from "../../Assets/data";
 const data = ["sofas", "sajkd", "hskag", "jkualas"];
