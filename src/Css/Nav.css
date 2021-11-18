@@ -1,59 +1,146 @@
-.navbar{
-    background-color: #000;
-    height:80px;
-    z-index: 1;
-  }
+.navbar {
+  background-color: #000;
+  height: 80px;
+  z-index: 3;
+}
 
-  .navlogo{
-      margin: 0 30px 0 15px ;
-  }
+.navlogo {
+  margin: 0 30px 0 15px;
+}
+/* search css */
+.search {
+  height: 30px;
+  margin-left: 17px;
+  padding-left: 10px;
+  width: 300px;
+  height: 35px;
+  background-color: rgb(7, 7, 7);
+  border-radius: 5px;
+  border-color: white;
+  box-shadow: rgba(55, 132, 233, 0.514);
+  position: relative;
+  outline-width: thin;
+  justify-content: center;
+}
+.searchIcon {
+  color: white;
+  position: absolute;
+  justify-content: end;
+  margin-left: 250px;
+  margin-top: 10px !important;
+}
 
-  .search{
-      height: 30px;
-      margin-left: 17px;
-      padding-left: 10px;
-      width: 300px;
-      height: 35px;
-      background-color:rgb(7, 7, 7);
-      border-radius: 5px;
-      /* border-color: white; */
-      /* box-shadow: rgba(55, 132, 233, 0.514); */
-      position: relative;
-      /* outline-width: thin; */
-      justify-content: center;
+.suggestionbox {
+  margin-top: 57px;
+  margin-left: 250px;
+  display: flex;
+  height: 438px;
+  width: 778px;
+  padding: 5px 5px 5px 0;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 40%);
+  background:white;
+  z-index:3;
+  position:absolute;
 
-      
-  }
-  
-  .sticky {
-    position:fixed;
-    top: 0;
-    width: 100%;
-  }
-  .outerdiv{
-    margin: 20px;
-    padding: 5px;
-    text-align: center;
-    text-transform:uppercase;
-    }
-    .innerdiv{
-    margin: 30px;
-    color: turquoise;
-    /* word-spacing: 5px; */
-    }
-    .text{
-        margin: 16px !important;
-    }
-    .divsticky{
-      position:sticky;
-      bottom:0px;
-      z-index:1;
-    }
-    .divsticky1{
-      position:sticky;
-      top:80px;
-      z-index:1;
-    }
-    .a:hover{
-      background-color: aqua;
-    }
+}
+.search-box-product-titles {
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #333;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 0;
+  padding-bottom: 4px;
+}
+.suggestion-list {
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #666;
+  padding-left: 16px;
+}
+
+.search-box-product-main-title {
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #333;
+  padding: 12px 0 8px 5px;
+}
+.search-box-product-name {
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+.cardhover:hover{
+  transform: scale(1.05);
+
+}
+.price-old {
+  font-size: 14px!important;
+  display: inline-block;
+  text-decoration: inherit;
+  line-height: 20px;
+  color: #000;
+}
+.oldPriceBeforeDiscount {
+  text-decoration-line: line-through;
+  font-size: 18px;
+}
+.price-strike {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #999595;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.outerdiv {
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.innerdiv {
+  margin: 30px;
+  color: turquoise;
+  /* word-spacing: 5px; */
+}
+.text {
+  margin: 16px !important;
+}
+.divsticky {
+  position: sticky;
+  bottom: 0px;
+  z-index: 1;
+}
+.divsticky1 {
+  position: sticky;
+  top: 80px;
+  z-index: 1;
+}
+.a:hover {
+  background-color: aqua;
+}

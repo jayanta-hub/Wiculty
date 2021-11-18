@@ -43,7 +43,7 @@ const Dashbord = () => {
         {ImageData.map((value) => {
           return (
             <div className="col mb-4">
-              <div className="card h-100">
+              <div className="card h-100 card-style">
                 <img src={value.url} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>

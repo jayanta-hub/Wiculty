@@ -39,7 +39,7 @@ const Instructor = () => {
 
       <div className="container">
         <div className="row col-auto justify-content-center">
-          <div className="col-sm-4 card">
+          <div className="col-sm-4 card ">
             <span style={{ color: "Dodgerblue", paddingTop: "10px" }}>
               <i className="fas fa-bezier-curve fa-3x"></i>
             </span>
@@ -138,29 +138,28 @@ const Instructor = () => {
           </div>
           <form className="w-100">
             <div className="login">
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   name="name"
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Name"
                   aria-describedby="basic-addon1"
                 />
               </div>
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   name="email"
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Email ID*"
-                  aria-describedby="basic-addon1"
                 />
               </div>
               <div class="input-group mb-3">
                 <input
                   name="mobile"
                   type="number"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Mobile number*"
                   aria-describedby="basic-addon1"
                 />
@@ -170,16 +169,16 @@ const Instructor = () => {
                 <input
                   name="profile"
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Your linkedin Profile"
                   aria-describedby="basic-addon1"
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="exampleFormControlFile1">Upload Resume*</label>
                 <input
                   type="file"
-                  class="form-control-file"
+                  className="form-control-file"
                   id="exampleFormControlFile1"
                 />
               </div>
@@ -195,14 +194,14 @@ const Instructor = () => {
           <p style={{ textAlign: "center" }}>Instructor-friendliness matters a lot to us</p>
         <div
           id="carouselExampleSlidesOnly"
-          class="carousel slide"
+          className="carousel slide"
           data-ride="carousel"
           style={{ marginTop: "80px" }}
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img
-                class="d-block w-100"
+                className="d-block w-100"
                 src="https://d2alvkbeky9xdq.cloudfront.net/img/cook-your-course.png"
                 alt="First slide"
               />

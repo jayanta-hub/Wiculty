@@ -10,17 +10,17 @@ import React, { Component } from 'react'
          }
 
      }
-     const filterhandler = (e) => {
+      filterhandler = (e) => {
         setSearchfilter(e.target.value);
       };
-      const filterhandler1 = () => {
+       filterhandler1 = () => {
         setShow(!show);
         console.log(show);
       };
-      const filterhandler2 = () => {
+       filterhandler2 = () => {
         setShow(false);
       };
-      const valuehandler=(e)=>{
+       valuehandler=(e)=>{
         console.log(e)
         console.log(e.target)
         console.log(e.target.value)
