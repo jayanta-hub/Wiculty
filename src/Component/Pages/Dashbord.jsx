@@ -35,16 +35,14 @@ const Dashbord = () => {
           </div>
         </div>
       </div>
-      <div className="alert alert-primary divsticky1" role="alert">
-        This is a primary alert—check it out!
-      </div>
+      
 
       <div className="row row-cols-1 row-cols-md-3 m-1">
         {ImageData.map((value) => {
           return (
             <div className="col mb-4">
               <div className="card h-100 card-style">
-                <img src={value.url} className="card-img-top" alt="..." />
+                <img src={value.url} className="card-img-top" alt="image" />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">{value.text}</p>
@@ -55,9 +53,7 @@ const Dashbord = () => {
         })}
       </div>
 
-      <div className="alert alert-primary divsticky" role="alert">
-        This is a primary alert—check it out!
-      </div>
+     
       <div
         id="carouselExampleSlidesOnly"
         className="carousel slide"
