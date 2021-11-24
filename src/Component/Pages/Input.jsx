@@ -26,7 +26,6 @@ const Input = () => {
             name="name"
             type="text"
             className="form-control"
-            id="exampleInputEmail1"
             aria-describedby="emailHelp"
             onChange={capturedata}
           />
@@ -36,7 +35,6 @@ const Input = () => {
             name="number"
             type="number"
             className="form-control"
-            id="exampleInputEmail1"
             aria-describedby="emailHelp"
             onChange={capturedata}
           />

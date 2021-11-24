@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useState } from "react";
 import { ImageData } from "../../Assets/ImageData";
 
-
 const Dashbord = () => {
   let [count, setCount] = useState(1);
   let [timeref, setTimeref] = useState();
@@ -35,8 +34,6 @@ const Dashbord = () => {
           </div>
         </div>
       </div>
-      
-
       <div className="row row-cols-1 row-cols-md-3 m-1">
         {ImageData.map((value) => {
           return (
@@ -53,7 +50,6 @@ const Dashbord = () => {
         })}
       </div>
 
-     
       <div
         id="carouselExampleSlidesOnly"
         className="carousel slide"

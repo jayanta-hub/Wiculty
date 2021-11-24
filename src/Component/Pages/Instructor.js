@@ -137,66 +137,66 @@ const Instructor = () => {
             </p>
           </div>
           <form className="w-100">
-            <div className="login">
-              <div className="input-group mb-3">
-                <input
-                  name="name"
-                  type="text"
-                  className="form-control"
-                  placeholder="Name"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div className="input-group mb-3">
-                <input
-                  name="email"
-                  type="email"
-                  className="form-control"
-                  placeholder="Email ID*"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <input
-                  name="mobile"
-                  type="number"
-                  className="form-control"
-                  placeholder="Mobile number*"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-
-              <div class="input-group mb-3">
-                <input
-                  name="profile"
-                  type="text"
-                  className="form-control"
-                  placeholder="Your linkedin Profile"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div className="form-group">
-                <label for="exampleFormControlFile1">Upload Resume*</label>
-                <input
-                  type="file"
-                  className="form-control-file"
-                  id="exampleFormControlFile1"
-                />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
+            <div className="input-group mb-3">
+              <input
+                name="name"
+                type="text"
+                className="form-control"
+                placeholder="Name"
+                aria-describedby="basic-addon1"
+              />
             </div>
+            <div className="input-group mb-3">
+              <input
+                name="email"
+                type="email"
+                className="form-control"
+                placeholder="Email ID*"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                name="mobile"
+                type="number"
+                className="form-control"
+                placeholder="Mobile number*"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <input
+                name="profile"
+                type="text"
+                className="form-control"
+                placeholder="Your linkedin Profile"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div className="form-group">
+              <label for="exampleFormControlFile1">Upload Resume*</label>
+              <input
+                type="file"
+                className="form-control-file"
+                id="exampleFormControlFile1"
+              />
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
           </form>
         </div>
         <h5 className="text">
           Join the Vibrant Queue of Most Happening Training Canopy
         </h5>
-          <p style={{ textAlign: "center" }}>Instructor-friendliness matters a lot to us</p>
+        <p style={{ textAlign: "center" }}>
+          Instructor-friendliness matters a lot to us
+        </p>
         <div
           id="carouselExampleSlidesOnly"
           className="carousel slide"
           data-ride="carousel"
-          style={{ marginTop: "80px" }}
+          style={{ marginTop: "60px" }}
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
