@@ -107,7 +107,10 @@
   justify-content: center;
   background-image: url("./image/images\ \(1\).jfif");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
   height:729px;
+}
+.main_container{
+  margin-top: 80px;
 }
