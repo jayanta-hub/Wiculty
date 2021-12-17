@@ -5,15 +5,19 @@ const SideEffect = () => {
   const [count, setCount] = useState(0);
   const [calculation, setCalculation] = useState(0);
   const [show1, setShow1] = useState(false);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
  
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const Ui=()=>{
+    return <h1>helloxxxxxl</h1>
+      }
   useEffect(() => {
     setCalculation(() => count * 2);
+    console.log("nknk")
   }, [count]);
 
     // useEffect(() => {
