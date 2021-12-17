@@ -12,14 +12,17 @@ const SideEffect = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const Ui=()=>{
-    return <h1>helloxxxxxl</h1>
-      }
+ 
   useEffect(() => {
     setCalculation(() => count * 2);
     console.log("nknk")
   }, [count]);
 
+  let countHanlder =()=>{
+    setCount(count + 1);
+    setCount(count -3);
+    // setCount(count + 4);
+  }
     // useEffect(() => {
     //   let timer = setTimeout(() => {
     //   setCount((count) => count + 1);
@@ -34,7 +37,7 @@ const SideEffect = () => {
       <h1>hello</h1>
       <h1>{count}</h1>
       <p>Count: {count}</p>
-      <button className="btn bg-primary" onClick={() => setCount( count + 1)}>+</button>
+      <button className="btn bg-primary" onClick={countHanlder}>+</button>
       <p>Calculation: {calculation}</p>
 
      
